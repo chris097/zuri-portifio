@@ -1,0 +1,348 @@
+.theme .circle-red{
+    position: fixed;
+    animation: move 6s infinite ease-in-out;
+}
+
+.theme .circle-blue{
+    position: fixed;
+    animation: troll 6s infinite ease-in-out;
+}
+.theme .circle-pink{
+    position: fixed;
+    animation: moves 6s infinite ease-in-out;
+}
+
+.theme .circle-black{
+    position: fixed;
+    animation: trolls 6s infinite ease-in-out;
+}
+
+.banner{
+    margin-top: 150px;
+    line-height: .5;
+    position: relative;
+    animation: move-in 1s ease-in-out;
+}
+
+.banner > h2{
+    font-size: 30px;
+    color: #ffcef3;
+}
+.banner > h1{
+    font-size: 70px;
+    line-height: 1.1;
+}
+.banner  p{
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.banner .btn{
+    border: #750113 4px solid;
+    background-color: transparent;
+    font-size: 20px;
+    display: flex;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.banner .btn a{
+    color: #ff304f;
+}
+
+.banner .btn:hover{
+    border: #ff304f 4px solid;
+}
+.banner .btn a > img{
+    width: 25px;
+    height: 25px;
+    margin-left: 2px;
+    padding-top: 11.833px;
+}
+
+@media screen and (max-width: 800px){
+    .banner{
+        margin-left: 22px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 615px){
+    
+    .banner > h1{
+        font-size: 50px;
+    }
+    .banner  p{
+        font-size: 20px;
+    }
+}
+
+/* About-Me */
+
+#about-me{
+    margin-top: 100px;
+}
+
+.line{
+    
+    padding: 0 70px;
+    margin-top: 25px;
+    border-top: #ff304f 1.5px solid;
+    position: absolute;
+}
+
+#about-me .container > h1{
+    font-size: 45px;
+    position: relative;
+    margin-left: 150px;
+    animation: about-me 1s ease-in-out;
+}
+
+.about-me-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-container .about-me-col-1{
+    width: 600px;
+    font-size: 20px;
+    animation: about-me-col-1 1s ease-in-out;
+    position: relative;
+    margin-top: 25px;
+}
+
+#about-me .about-me-col-2{
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    animation: about-me-col-2 2s ease-in-out;
+}
+
+#about-me .about-me-col-2 li{
+    font-size: 20px;
+}
+
+#about-me .about-me-col-2 .core-stack{
+    margin-right: 80px;
+}
+
+@media screen and (max-width: 800px){
+    .about-me-container{
+        flex-direction: column;
+    }
+    .about-me-container .about-me-col-1{
+        width: 100%;
+    }
+    #about-me .about-me-col-2 .core-stack-1{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 800px){
+    #about-me .container > h1{
+        font-size: 30px;
+    }
+    .line{
+        margin-top: 18px;
+    }
+}
+
+/* Project */
+
+#projects{
+    margin-top: 70px;
+}
+
+#projects .container > h1{
+    font-size: 45px;
+    margin-left: 150px;
+}
+
+#projects .project-container-1,
+#projects .project-container{
+    display: flex;
+    justify-content: space-between;
+}
+#projects .project-container-1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#projects .project-container .project-image{
+    width: 430px;
+    height: 300px;
+    background: url('../img/mainone.png') no-repeat center center/cover;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    opacity: .6;
+}
+#projects .project-container .project-image-2{
+    width: 430px;
+    height: 300px;
+    background: url('../img/kovid.png') no-repeat center center/cover;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    opacity: .6;
+}
+
+#projects .project-container-1 .project-image-1{
+    width: 430px;
+    height: 300px;
+    background: url('../img/todo.png') no-repeat center center/cover;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    opacity: .6;
+}
+
+#projects .project-container .project-image:hover,
+#projects .project-container-1 .project-image-1:hover,
+#projects .project-container-1 .project-image-2:hover{
+    opacity: .9;
+}
+
+#projects .project-container .project-image .col-1 img{
+    width: 430px;
+    height: 300px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#projects .project-container .project-image-2 .col-1 img{
+    width: 430px;
+    height: 300px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#projects .project-container-1 .project-image-1 .col-1 img{
+    width: 430px;
+    height: 300px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -100px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#projects .project-container-1 .project-text,
+#projects .project-container .project-text{
+    width: 400px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+#projects .project-container-1 .project-text h1,
+#projects .project-container .project-text h1{
+    color: #ff304f;
+    font-size: 35px;
+}
+
+#projects .project-container-1 .project-text .flex-end,
+#projects .project-container .project-text .flex-end{
+    text-align: end;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1024px){
+    #projects .project-container-1,
+    #projects .project-container{
+        flex-direction: column;
+    }
+    #projects .project-container .project-text,
+    #projects .project-container-1 .project-text{
+        width: 100%;
+    }
+    #projects .project-container-1 .project-image-1{
+        margin-left: 100px;
+    }
+    #projects .project-container-1{
+        margin-bottom: 150px;
+    }
+    #projects .project-container .project-text{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #projects .project-container .project-image,
+    #projects .project-container .project-image .col-1 img,
+    #projects .project-container .project-image-2,
+    #projects .project-container .project-image-2 .col-1 img,
+    #projects .project-container-1 .project-image-1,
+    #projects .project-container-1 .project-image-1 .col-1 img{
+        width: 200px;
+        height: 150px;
+        margin-top: 50px;
+    }
+    #projects .project-container-1 .project-text,
+    #projects .project-container .project-text{
+        margin-top: 50px;
+    }
+    #projects .container > h1{
+        font-size: 35px;
+    }
+    .line{
+        margin-top: 18px;
+    }
+    #projects .project-container-1{
+        margin-top: -60px;
+        margin-bottom: 50px;
+    }
+    .flex-end span{
+        line-height: 20px;
+    }
+}
+
+/* contact */
+#contact{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.contact-box{
+    background-color: #750113;
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+}
+#contact .container h1{
+    font-size: 35px;
+    padding-top: 5px;
+}
+
+#contact .container .contact-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact .container .contact-container img{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 600px){
+    #contact{
+        margin-top: 40px;
+    }
+    .contact-box{
+        width: 100%;
+    }
+    #contact .container h1{
+        font-size: 25px;
+    }
+}
